@@ -1,0 +1,91 @@
+/*mobile*/
+body, html {
+	width: 100%;
+	margin: 0;
+}
+
+.main-container {
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-direction: row;
+}
+
+h1 {
+	width:100%;
+	margin-top: 8%;
+	font-size: 8vw;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	font-family: 'Agency FB';
+	letter-spacing: 5px;
+	transition: all 1s ease-in;
+}
+
+#clock {
+	width:100%;
+	font-size: 9vw;
+	color: white;
+	text-align: center;
+	font-family: 'roboto';
+	margin-top: 2%;
+}
+p {
+	font-family: Agency FB;
+	color: white;
+}
+
+/*tablet*/
+@media screen and (max-width: 767px) {
+	h1 {
+		font-size: 12vw;
+		margin-top: 20%;
+	}
+	.main-container {
+		flex-direction: column;
+	}
+	p {
+		text-align: center;
+		font-size: 4vw;
+		margin-top: 10%;
+	}
+	
+}
+/* klein scherm*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+	h1 {
+		font-size: 12vw;
+		margin-top: 10%;
+	}
+	.main-container {
+		flex-direction: column;
+	}
+	p {
+		text-align: center;
+		font-size: 6vw;
+		margin-top: 10%;
+	}
+}
+/* desktop*/
+@media screen and (min-width: 1024px) {
+	h1 {
+		font-size: 6vw;
+		margin-top: 5%;
+	}	
+	
+}
+	.main-container {
+		flex-direction: row;
+		flex-wrap: wrap-reverse;
+		margin-top: 2%;
+		font-size: 2vw;
+		align-items: center;
+		text-align: center;
+	}
+	p {
+			font-size: 4vw;
+			margin-top: 4%;
+			margin-left: 42%;
+			text-align: center;
+		}
